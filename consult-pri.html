@@ -1,0 +1,227 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DR.MEDZ</title>
+    <link rel="icon" type="image/icon type" href="img/drmedz.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="consult_style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#82AAE3;">
+        <div class="logo">
+            <img src="img/drmedz.png" alt="Dr.MedzLogo">
+        </div>
+        <a class="navbar-brand" href="#"><span style="color:white;">DR.</span><span
+                style="color:#024583;">MEDZ</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="nav justify-content-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <div class="active">
+                        <a class="nav-link" href="services.html">SERVICES</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medical.html">MEDICAL TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <!-- Button HTML (to Trigger Modal) -->
+            <a href="#myModal" class="trigger-btn" data-toggle="modal" style="text-decoration: none;">
+                <div class="login">
+                    <img src="img/gray_user.png" alt="">
+                    <span><a href="index.html">Chris Brown</a></span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <div class="card-service">
+        <h1 style="padding-left: 45rem;">Consultation Information</h1>
+    </div>
+
+    <section>
+        <div class="cards-3 justify-content-center mb-5">
+            <div class="card mb-5">
+                <div class="card-body">
+                    <form id="appointment" action="">
+                        <ul id="progressbar">
+                            <li class="active">Choose Appointment</li>
+                            <li>Confirmation</li>
+                        </ul>
+                        <fieldset class="select">
+                            <option>Select Date</option>
+                            <input type="date" id="consult_date" name="Consult_date" style="width: 62rem; height: 4rem; border: none; padding: 1.5rem">
+                        </input>
+                            <select class="details" name="doctor" id="">
+                                <option>Select Doctor</option>
+                                <option value="1">Dra. Jane Madrigal</option>
+                                <option value="2">Dr. Jose Pedro</option>
+                                <option value="3">Dr. Chris Brown</option>
+                                <option value="3">Dra. Hanna Brown</option>
+                                <option value="3">Dr. Ben Logan</option>
+                                <option value="3">Dr. Rubert Yummi</option>
+                            </select>
+
+                            <select class="details" name="avail_time" id="">
+                                <option>View Available Time</option>
+                                <option value="1">8:00 AM</option>
+                                <option value="2">9:00 AM</option>
+                                <option value="3">10:00 AM</option>
+                                <option value="3">11:00 AM</option>
+                                <option value="3">01:00 PM</option>
+                                <option value="3">02:00 PM</option>
+                                <option value="3">03:00 PM</option>
+                                <option value="3">04:00 PM</option>
+                                <option value="3">05:00 PM</option>
+                                <option value="3">06:00 PM</option>
+                                <option value="3">07:00 PM</option>
+                            </select>
+
+                            <a class="btn btn-primary" id="next" name="next" role="button">Next</a>
+                        </fieldset>
+
+                        <fieldset class="confirm">
+                            <div class="line-1">
+                                <input type="text" class="form-control" name="lastname" placeholder="FULL NAME"
+                                    required="required">
+                                <input type="text" class="form-control" name="firstname" placeholder="DATE OF BIRTH"
+                                    required="required">
+                            </div>
+                            <input type="text" class="form-control" name="middlename" placeholder="ADDRESS">
+                            <div class="line-2">
+                                <input type="text" class="form-control" name="middlename" placeholder="PHONE NUMBER">
+                                <input type="text" class="form-control" name="middlename" placeholder="EMAIL">
+                            </div>
+                            <div class="line-1" style="border-top: 2px solid #91D8E4; padding-top:10px;">
+                                <input type="text" class="form-control" name="middlename" placeholder="DOCTORS' NAME">
+                                <input type="text" class="form-control" name="middlename" placeholder="SPECIALITY">
+                            </div>
+                            <div class="line-2" style="border-bottom: 2px solid #91D8E4;">
+                                <input type="text" class="form-control" name="middlename" placeholder="TIME">
+                                <input type="text" class="form-control" name="middlename" placeholder="DATE">
+                            </div>
+                            <span>Select Payment Method</span>
+                            <div class="payment">
+                                <img src="img/pay1.png" alt="">
+                                <img src="img/pay2.png" alt="">
+                                <img src="img/pay3.png" alt="">
+                                <img src="img/pay4.png" alt="">
+                            </div>
+                            <a class="btn btn-primary" id="back" name="back" href="#" role="button">Back</a>
+                            <a class="btn btn-primary" name="confirm" href="#" role="button" data-dismiss="modal"
+                                data-toggle="modal" data-target="#successModal">
+                                Confirm
+                            </a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+
+                    $(".select").show();
+                    $(".confirm").hide();
+                    $("#progressbar li.active").css("font-weight", "bolder");
+                    $("#progressbar li.active").css("font-size", "22px");
+
+                    $("#next").click(function () {
+                        $("#progressbar li").addClass("active");
+                        $("#progressbar li.active").next().css("font-weight", "bolder");
+                        $("#progressbar li.active").next().css("font-size", "22px");
+                        $(".select").hide();
+                        $(".confirm").show();
+                    });
+
+                    $("#back").click(function () {
+                        $(".select").show();
+                        $(".confirm").hide();
+                        $("#progressbar li").next().removeClass("active");
+                        $("#progressbar li.active").next().css("font-weight", "500");
+                        $("#progressbar li.active").next().css("font-size", "20px");
+                    });
+
+                });
+
+            </script>
+        </div>
+
+        <div id="successModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2><strong>Appointment Successful!</strong></h2>
+                    </div>
+                    <h4><a href="">Update Schedule</a></h4>
+                    <h4><a href="">Review Schedule</a></h4>
+
+                    <h3>Thank you for trusting Dr.Medz!</h3>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" data-dismiss="modal"
+                        aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color:#82AAE3; color:#0245A3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h5 class="widgetheading"><strong>CONTACT US</strong></h5>
+                        <address>
+                            <span>dr.medz@gmail.com</span><br>
+                            <span>+63 905 162 5567</span>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h5 class="widgetheading"><strong>FOLLOW US</strong></h5>
+                        <address>
+                            <span><a href="#">facebook.com/dr.medz</a></span>
+                            <span><a href="#">instagram.com/dr.medz</a></span>
+                            <span><a href="#">twitter.com/DRMedz</a></span>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h5 class="widgetheading"><strong>OUR PARTNERS</strong></h5>
+                        <img src="img/images (1).png" alt="">
+                        <img src="img/istockphoto-1182998204-612x612.jpg" alt="">
+                        <img src="img/istockphoto-958800720-612x612.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

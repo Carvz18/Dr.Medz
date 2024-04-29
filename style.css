@@ -1,0 +1,242 @@
+@font-face {
+	font-family: "Garet";
+	src: url(fonts/Garet-Book.ttf) format(truetype);
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url(fonts/Poppins-Black.ttf) format(truetype);
+}
+
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+.nav-item a {
+    color:#EAFDFC;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color:#0245A3;
+    font-weight: bolder;
+}
+.nav-item .active  a {
+    color:#0245A3;
+    font-weight: bolder;
+}
+.login {
+    background-color: #EAFDFC;
+    padding: 5px 15px 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.login img {
+    height: 20px;
+}
+.logo {
+    margin-right: 10px;
+}
+.logo img {
+    height: 50px;
+    width: 55px;
+    border-radius: 15px 50px 35px 40px;
+}
+footer {
+    padding-top: 20px;
+}
+footer address {
+    margin-left: 25px;
+}
+footer a {
+    text-decoration: none;
+    color: #0245A3;
+}
+footer img {
+    height: 55px;
+    width: 65px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+/******** Modal 1 ********/
+.modal-login {
+    color: #636363;
+    max-width: 950px;
+    margin: 65px auto 0;
+}
+#myModal .modal-login {
+    width: 600px;
+}
+.modal-login .modal-content {
+    padding: 0px 30px 20px 30px;
+    border-radius: 15px;
+    border: none;
+}
+#myModal .modal-login h4 {
+    font-size: 26px;
+    margin-left: 215px;
+    text-align: center;
+}
+#myModal .modal-login span {
+    margin-left: 155px;
+    margin-bottom: 5px;
+}
+.modal-login .form-control, .modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+}
+.modal-login .btn {
+    color: #ffffff;
+    border-radius: 4px;
+    background: #91D8E4;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+    background: #45aba6;
+    outline: none;
+}
+#myModal .modal-body .btn.btn-primary.btn-lg.btn-block.login-btn {
+    margin-left: 155px;
+}
+.modal-body form input {
+    height: 45px;
+}
+.modal-body form .btn {
+    width: 205px;
+    margin-left: 15px;
+}
+.modal-body form .pwd {
+    position: relative;
+    bottom:15px;
+}
+.modal-footer-1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 85px;
+}
+.modal-footer-1 img {
+    height: 25px;
+    position: relative;
+    top:-3px;
+}
+.modal-footer-1 .btn {
+    width: 165px;
+    height: 45px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.modal-footer-2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.modal-footer-2 .btn {
+    width: 245px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.modal-login .opt1 {
+    margin-left: 75px;
+    margin-bottom: 5px;
+}
+.modal-login .opt2 {
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+.modal-footer-1, .modal-footer-2 {
+    border-top: 1px solid rgba(151, 149, 149, 0.538);
+}
+/******** Modal 2 ********/
+#myModal2 .modal-login {
+    width: 950px;
+}
+#myModal2 .modal-login .modal-content {
+    padding-bottom: 0;
+}
+#myModal2 .avatar img {
+    height: 455px;
+    position: relative;
+    float: left;
+}
+#myModal2 h4 {
+    position: relative;
+    float: right;
+    margin-right: 445px;
+    margin-bottom: 20px;
+}
+#myModal2 .form-group {
+    padding-left: 345px;
+    margin-bottom: 15px;
+}
+#myModal2 .form-group input {
+    height: 25px;
+    width: 245px;
+}
+#myModal2 .form-group .name {
+    display: flex;
+    flex-direction: row;
+}
+#myModal2 .form-group .name input {
+    width: 165px;
+    margin-right: 10px;
+}
+#myModal2 .form-group .line2 {
+   position: relative;
+   float: right;
+   top:-80px;
+}
+#myModal2 .form-group .terms {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+#myModal2 .form-group .terms input {
+    height: 16px;
+}
+#myModal2 .form-group .terms label {
+    width: 1250px;
+}
+#myModal2 form .btn{
+    width: 300px;
+    margin-left: 105px;
+    position: relative;
+    bottom: 30px;
+}
+/******** Modal 3 ********/
+#myModal3 .modal-login {
+    width: 600px;
+}
+#myModal3 .modal-login h4 {
+    font-size: 26px;
+    margin-left: 145px;
+    text-align: center;
+}
+#myModal3 .modal-body .btn.btn-primary.btn-lg.btn-block.login-btn {
+    margin-left: 155px;
+}
+#myModal3 .modal-login .opt2 {
+    margin-left: 235px;
+    margin-bottom: 5px;
+}
+/******** Modal 4 ********/
+#myModal4 .modal-login {
+    width: 600px;
+}
+#myModal4 .modal-login h4 {
+    font-size: 26px;
+    margin-left: 155px;
+    text-align: center;
+}
+#myModal4 .modal-body .btn.btn-primary.btn-lg.btn-block.login-btn {
+    margin-left: 155px;
+}
+#myModal4 .modal-login .opt2 {
+    margin-left: 235px;
+    margin-bottom: 5px;
+}

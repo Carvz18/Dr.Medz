@@ -1,0 +1,559 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>DR.MEDZ</title>
+        <link rel="icon" type="image/icon type" href="img/drmedz.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about_style.css"
+</head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#82AAE3;">
+            <div class="logo">
+                <img src="img/drmedz.png" alt="Dr.MedzLogo">
+            </div>
+    
+            <a class="navbar-brand" href="#"><span style="color:white;">DR.</span><span
+                    style="color:#024583;">MEDZ</span></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="nav justify-content-right" style="list-style-type: none;">
+                    <li class="nav-item">
+                            <a class="nav-link" href="home_landingpage.html">HOME</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="services_landingpage.html">SERVICES</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="medical_landingpage.html">MEDICAL TEAM</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_landingpage.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="text-center">
+                <!-- Button HTML (to Trigger Modal) -->
+                <a href="#myModal" class="trigger-btn" data-toggle="modal" style="text-decoration: none;">
+                    <div class="login mlz-auto">
+                        <img src="img/gray_user.png" alt="">
+                        <span>LOGIN</span>
+                    </div>
+                </a>
+                
+            <!----------------- 1st Modal ----------------->
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-login" >
+                    <div class="modal-content">
+                        <div class="modal-header mb-3">
+                            <h4 class="modal-title"><strong>Log in</strong></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                            <span>New to <strong>Dr.Medz</strong>? 
+                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">
+                                    Sign up now!
+                                </a>
+                            </span>
+                        <div class="modal-body">
+                            <form action="patientlogin.php" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                                </div>
+                                <a href="#" class="pwd" style="font-size: 12px; margin-top:0px;">Forgot Password?</a>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">
+                                        <a href="home.html" style="color:white; text-decoration:none;">LOG IN</a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    <!---------Modal 1 footer 1 ----------->
+                        <div class="opt1">
+                            <span>Log in with</span>
+                        </div>
+                        <div class="modal-footer-1">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"><img src="img/apple-48.png" alt=""></button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"><img src="img/google.ico" alt="" 
+                                    style="filter: invert(100%) sepia(13%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);">
+                                </button>
+                            </div>
+                        </div>
+                    <!---------Modal 1 footer 2 ----------->
+                        <div class="opt2">
+                            <span>Log in as</span>
+                        </div>
+                        <div class="modal-footer-2">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"
+                                        data-dismiss="modal" data-toggle="modal" data-target="#myModal3">
+                                    Medical Professional
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"
+                                        data-dismiss="modal" data-toggle="modal" data-target="#myModal4">
+                                    Admin
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------- 2nd Modal ------------------>
+            <div id="myModal2" class="modal fade">
+                <div class="modal-dialog modal-login" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title"><strong>Sign Up</strong></h4>
+                            <form action="signup.php" method="post">
+                                <div class="avatar">
+                                    <img src="img/pexels-cottonbro-studio-5722164.jpg" alt="Avatar">
+                                </div>
+                                <div class="form-group">
+                                    <span>Complete Name:</span>
+                                    <div class="name">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required="required">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name" required="required">
+                                        <input type="text" class="form-control" name="middlename" placeholder="Middle Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="line1">
+                                        <span>Date of Birth:</span>
+                                        <input type="date" class="form-control" name="birth" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="line2">
+                                        <span>Gender:</span>
+                                        <input type="text" class="form-control" name="gender" placeholder="Gender" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span>Phone Number:</span>
+                                    <input type="tel" class="form-control" name="cpnum" placeholder="(+63)" required="required">	
+                                </div>
+                                <div class="form-group">
+                                    <div class="line2">
+                                    <span>Email:</span>
+                                    <input type="email" class="form-control" name="email" placeholder="email@example.com" required="required">		
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span>Password:</span>
+                                    <input type="password" class="form-control" name="password"  required="required">	
+                                </div>
+                                <div class="form-group">
+                                    <div class="line2">
+                                        <span>Confirm Password:</span>
+                                        <input type="password" class="form-control" name="confirmpassword"  required="required">	
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="terms">
+                                        <input type="checkbox" id="term&cond" name="term&cond">
+                                        <label for="terms&cond">I agree the terms and conditions</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">SIGN UP</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------- 3rd Modal ------------------>
+            <div id="myModal3" class="modal fade">
+                <div class="modal-dialog modal-login" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Log in as Medical <br> Professional</strong></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="medlogin.php" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                                </div>
+                                <a href="#" class="pwd" style="font-size: 12px; margin-top:0px;">Forgot Password?</a>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">
+                                       <a href="doctor.html" style="color:white; text-decoration:none;">LOG IN</a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    <!---------Modal 1 footer 1 ----------->
+                        <div class="opt2">
+                            <span>Log in as</span>
+                        </div>
+                        <div class="modal-footer-2">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn" data-dismiss="modal" data-toggle="modal" data-target="#myModal">
+                                    Consultee
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"
+                                        data-dismiss="modal" data-toggle="modal" data-target="#myModal4">
+                                    Admin
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------- 4th Modal ------------------>
+            <div id="myModal4" class="modal fade">
+                <div class="modal-dialog modal-login" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Log in as Admin</strong></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="adminlogin.php" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                                </div>
+                                <a href="#" class="pwd" style="font-size: 12px; margin-top:0px;">Forgot Password?</a>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">
+                                        <a href="admin.html" style="color:white; text-decoration:none;">
+                                            LOG IN
+                                        </a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    <!---------Modal 1 footer 1 ----------->
+                        <div class="opt2">
+                            <span>Log in as</span>
+                        </div>
+                        <div class="modal-footer-2">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">
+                                    Medical Professional
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn" data-dismiss="modal" data-toggle="modal" data-target="#myModal">
+                                    Consultee
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+        <header class="jumbotron jumbotron-fluid justify-content-center">
+            <div class="container push-break">
+                <div class="card-deck">
+                    <img src="img/drmedz.png" alt="" style="img">
+                    <div class="cards-1 justify-content-center">
+                        <div class="card-body">
+                            <h2 class="card-title" style="font-family: 'Poppins'; text-align: center;">
+                                DR.MEDZ
+                            </h2>
+                            <h5 style="text-align: center;">
+                                <strong>
+                                    YOUR HEALTH, OUR PRIORITY
+                                </strong>
+                            </h5>
+                            <p class="card-text">
+                               Dr.Medz is intended to meet the raising need for the accessible and convenient healthcare services.
+                               We recognize that getting medical care can be though, weather because of long wait periods, a lack
+                               of medical experts, or the difficulties of travelling to appointment. That's why we built a platform
+                               that lets you interact with qualified healthcare providers from the comfort of your own home.<br>
+                               <br>
+                               With the collaboration of a tema of experiences and certified medical specialist that are commited to
+                               providing you with the best possible treatment, the website is meant to provide a wide range of medical
+                               services, from general consultations to specialist treatments, all suited to your specific needs. The
+                               healthcare specialists listen to the concerns and provide individualized advice and treatment choices
+                               to help users manage their ilness successfully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-1 justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <strong>
+                                VISION
+                            </strong>
+                        </h4>
+                        <p class="card-text">
+                           Dr.Medz thinks that healthcare should be centered on the patient, convenient, and economical.
+                           The website's online medical consultation service accepts most major insurance types and has
+                           flexible scheduling, dedicated to developing long-term connections with our patients and providing
+                           the best possible treatment. The service seeks to make scheduling visits for consumers more 
+                           efficient and effective.
+                           <br><br>
+                           This enables patients who may experience hurdles to traditional in-person care with accessible and
+                           convenient healthcare services. Online medical consultaion strives to link patients with certified 
+                           medical experts via digital platforms, allowing patients to get necessary medical care from the 
+                           comfort of their homes.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <strong>
+                                MISSION
+                            </strong>
+                        </h4>
+                        <p class="card-text">
+                           To provide equitable and people-centered healthcare system that includes:
+                           <ul>
+                                <li>Accessibility</li>
+                                <li>Convenience</li>
+                                <li>Affordability</li>
+                                <li>Quality Care</li>
+                                <li>Personalization</li>
+                                <li>Continuity of Care</li>
+                           </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <!-- <div class="numbertext">1 / 3</div> -->
+                  <img src="img/slide1.jpg" style="width:100%">
+                  <!-- <div class="text">Caption Text</div> -->
+                </div>
+
+                <div class="mySlides">
+                  <!-- <div class="numbertext">2 / 3</div> -->
+                  <img src="img/slide2.jpg" style="width:100%">
+                  <!-- <div class="text">Caption Two</div> -->
+                </div>
+
+                <div class="mySlides">
+                  <!-- <div class="numbertext">3 / 3</div> -->
+                  <img src="img/slide3.jpg" style="width:100%">
+                  <!-- <div class="text">Caption Three</div> -->
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </section>
+        <section>
+            <div class="cards-2 justify-content-center mb-5 mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="img/50shealth.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Most common Health Problems After Age 50, Say Doctors</h5>
+                        <a class="btn btn-primary" href="https://www.webmd.com/healthy-aging/ss/slideshow-health-problems-after-50" role="button">View Article</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/covdvac.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">How long does Immunity last after COVID Vaccination?</h5>
+                        <a class="btn btn-primary" href="https://www.gavi.org/vaccineswork/covid-19-immunity-how-long-does-it-last?gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2DzjHDuo8b0dOWsXmF2-X7VOmQbVQgIizRAL04Fk963Fqpu4dfCklYaAhEBEALw_wcB" role="button">View Article</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/doh.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">DOH Launches Writing Contest for Medical Workers</h5>
+                        <a class="btn btn-primary" href="https://doh.gov.ph/press-release/DOH-CELEBRATES-NATIONAL-HEALTH-WORKERS-DAY-PAYS-TRIBUTE-TO-ALL-HEALTH-CARE-WORKERS" role="button">View Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card-query">
+                <h3><strong>Got some query?</strong></h3>
+                <h5>Let us know:</h5>
+                <form action="query.php" method="POST">
+                    <div class="line-1">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="line-2">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">SEND QUERY</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <div class="card-dev-title">
+            <h1><strong> OUR DEVELOPERS </strong></h1>
+        </div>
+        <div class="card-info">
+            <h5>Web developers play a critical role in creating and maintaining websites and web applications. 
+                They are responsible for designing and coding the technical infrastructure that underpins the site, 
+                including the front-end, back-end, and database systems. Without their expertise, websites would not 
+                be functional or user-friendly, and the user experience would suffer. Web developers also ensure that 
+                websites are optimized for performance, security, and scalability, and they are constantly adapting to 
+                changes in technology to ensure that websites remain up-to-date and competitive. The contributions of web
+                 developers are essential to the success of any website or web application, and their skills are in high 
+                 demand in today's digital age. Let us introduce our developers!</h5>
+        </div>
+        <section>
+            <div class="cards-2 justify-content-center">
+                <div class="card">
+                    <!-- <img class="card-img-top" src="img/ryan.jpg" alt="Project Manager Photo"> -->
+                    <div class="card-body">
+                        <h4 class="card-title">Ryan Patiño</h4>
+                        <p class="card-text">Project Manager</p>
+                        <a class="btn btn-primary" href="https://www.facebook.com/ryan.patino.5815/" role="button">View Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img class="card-img-top" src="img/ralph.JPG" alt="Lead Developer Photo"> -->
+                    <div class="card-body">
+                        <h4 class="card-title">Ralph Lahaman</h4>
+                        <p class="card-text">Lead Developer</p>
+                        <a class="btn btn-primary" href="https://www.facebook.com/auxtrius" role="button">View Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img class="card-img-top" src="img/jeyward.jpg" alt="Business Analyst Photo"> -->
+                    <div class="card-body">
+                        <h4 class="card-title">Jeyward Blas</h4>
+                        <p class="card-text">Business Analyst</p>
+                        <a class="btn btn-primary" href="https://www.facebook.com/jeyward1" role="button">View Profile</a>
+                    </div>
+                </div>
+                <div class="card">  
+                    <!-- <img class="card-img-top" src="img/charlyn.jpg" alt="UX/UI Designer Photo"> -->
+                    <div class="card-body">
+                        <h4 class="card-title">Charlyn Elorde</h4>
+                        <p class="card-text">UX/UI Designer</p>
+                        <a class="btn btn-primary" href="https://www.facebook.com/charlynelorde25" role="button">View Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img class="card-img-top" src="img/Adam_CCS.jpg" alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h4 class="card-title">Carvie Adam</h4>
+                        <p class="card-text">Quality Assurance Engineer</p>
+                        <a class="btn btn-primary" href="https://www.facebook.com/carvie.delosreyes" role="button">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <div class="widget">
+                    <h5 class="widgetheading"><strong>CONTACT US</strong></h5>
+                    <address>
+                        <span>dr.medz@gmail.com</span><br>
+                        <span>+63 905 162 5567</span>
+                    </address>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="widget">
+                    <h5 class="widgetheading"><strong>FOLLOW US</strong></h5>
+                    <address>
+                      <span><a href="#">facebook.com/dr.medz</a></span>
+                      <span><a href="#">instagram.com/dr.medz</a></span>
+                      <span><a href="#">twitter.com/DRMedz</a></span>
+                    </address>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="widget">
+                    <h5 class="widgetheading"><strong>OUR PARTNERS</strong></h5>
+                      <img src="img/images (1).png" alt="">
+                      <img src="img/istockphoto-1182998204-612x612.jpg" alt="">
+                      <img src="img/istockphoto-958800720-612x612.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

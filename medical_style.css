@@ -1,0 +1,116 @@
+.jumbotron {
+    padding-bottom: 5px;
+}
+.jumbotron .card-deck {
+    background-color:#BFEAF5;
+    border-radius: 10px;
+    position: relative;
+    top: -45px;
+}
+.jumbotron .cards-1 {
+    padding-left: 62.5px;
+}
+.nav-item a:hover {
+    color:#0245A3;
+    font-weight: bolder;
+}
+.nav-item .active  a {
+    color:#0245A3;
+    font-weight: bolder;
+}
+.card-info {
+    width: 1150px;
+    text-align: justify;
+    padding: 35px 65px;
+    background-color: #BFEAF5;
+    border-radius: 15px;
+}
+.card-dev-title {
+    text-align: center;
+    color: #024583;
+    margin-top: 25px;
+}
+.cards-3 {
+    padding-left: 60px;
+    display: flex;
+    margin-bottom: 35px;
+}
+.cards-3 .card {
+    width: 325px;
+    margin-right: 80px;
+    padding: 10px;
+}
+.cards-3 .card-body {
+    padding: 5px;
+}
+.cards-3 .card h6 {
+    font-size: smaller;
+    font-weight: bolder;
+}
+.cards-3 .card p {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+}
+.cards-3 .card .btn {
+    font-size: 10px;
+    float: right;
+    background-color:#91D8E4; 
+    border-color:#91D8E4; 
+    font-weight:bolder;
+    color: #024583;
+}
+.btn-success {
+    background-color: #91D8E4;
+    border: #82AAE3;
+}
+.search {
+    margin-bottom: 25px;
+}
+
+.card a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border-radius:15px;
+    border: 3px solid #EAFDFC;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #EAFDFC;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+.card a:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #82AAE3;
+    z-index: -1;
+  }
+  
+.card a:hover, button:focus {
+    color: #EAFDFC;
+  }
+  
+.card a:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+.card a:active {
+    transform: scale(0.9);
+  }

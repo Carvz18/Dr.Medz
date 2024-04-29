@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>DR.MEDZ</title>
+        <link rel="icon" type="image/icon type" href="img/drmedz.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .login {
+        position: relative;
+        left: 72%;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #82AAE3;
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav .menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #EAFDFC;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .toggle-brand a {
+        position: relative;
+        top: -50px;
+        left: 80px;
+    }
+    .sidenav a:hover {
+        color: #91D8E4;
+    }
+    .sidenav a img {
+        height: 25px;
+        margin-right: 10px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 8px;
+        left: -33px;
+        margin-left: 50px;
+    }
+    .sidenav .menu a:nth-child(4) {
+        position: relative;
+        top: 295px;
+    }
+    #container {
+        transition: margin-left .5s;
+        padding: 16px 16px 16px 85px;
+    }
+    #container .cards-1, #container .cards-2 {
+        display: flex;
+        flex-direction: row;
+    }
+    #container .cards-1 .card{
+        height: 120px;
+    }
+    #container .cards-2 {
+        background-color: #BFEAF5;
+        border-radius: 20px;
+        padding: 20px 0px 20px 45px;
+        max-width: 1105px;
+        margin-bottom: 25px;
+    }
+    #container .cards-2 h4 {
+        display: block;
+        position: absolute;
+    }
+    #container .cards-2 .card {
+        background-color: #91D8E4;
+        margin-top: 45px;
+    }
+    #container .card {
+        width: 345px;
+        margin: 15px 35px 25px 0;
+        border: 2px solid #91D8E4;
+        border-radius: 20px;
+    }
+    #container .card h5 {
+        font-weight: bolder;
+    }
+    #container .card label {
+        margin-top: 20px;
+        position: relative;
+        float: right;
+    }
+   .table-responsive {
+        background-color: #BFEAF5;
+        height: 275px;
+        max-width: 1105px;
+        margin-bottom: 45px;
+        border-radius: 20px;
+        padding: 25px;
+    }
+    .table-responsive h3 {
+        margin-bottom: 20px;
+    }
+    .table-responsive .list {
+        background-color: #91D8E4;
+        border-radius: 20px;
+        padding: 35px 25px;
+        height: 150px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#82AAE3;">
+        <div class="logo">
+            <img src="img/drmedz.png" onclick="openNav()" alt="Dr.MedzLogo">
+        </div>
+        <a class="navbar-brand" href="#"><span style="color:white;">DR.</span><span style="color:#024583;">MEDZ</span></a>
+        <div class="login">
+            <img src="img/gray_user.png" alt="">
+            <span>Jaden Smith</span>
+        </div>
+
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="logo">
+            <img src="img/drmedz.png" class="closebtn" onclick="closeNav()" alt="Dr.MedzLogo">
+        </div>
+        <div class="toggle-brand">
+            <a class="navbar-brand" href="#"><span style="color:white;">DR.</span><span style="color:#024583;">MEDZ</span></a>
+        </div>
+        <div class="menu">
+            <a href="#"><img src="img/categorize-32.png" alt="Home"> HOME</a>
+            <a href="#"><img src="img/calendar-7-32.png" alt="Appointments"> APPOINTMENTS</a>
+            <a href="#"><img src="img/notif.png" alt="Notifications"> NOTIFICATIONS</a>
+            <a href="index.html"><img src="img/logout-32.png" alt="Logout">LOG OUT</a>
+        </div>
+    </div>
+    <div id="container">
+        <div class="username">
+            <span>Welcome back,</span>
+            <h3><strong>Jaiden Smith</strong></h3>
+        </div>
+        <section>
+            <div class="cards-1">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Patients</h5>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Patients</h5>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Patient Statistics</h5>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="cards-2">
+                <h4><strong>Consultaion Dates</strong></h4>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">April 25</h5>
+                        <span>Patient Name:</span><br>
+                        <span style="padding-left:15px;">Chris Hemsworth</span><br>
+                        <span>Time:</span><br>
+                        <span style="padding-left:15px;">1:00 PM - 2:00 PM</span>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">May 6</h5>
+                        <span>Patient Name:</span><br>
+                        <span style="padding-left:15px;">Robert Downy</span><br>
+                        <span>Time:</span><br>
+                        <span style="padding-left:15px;">3:00 PM - 4:00 PM</span>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">May 10</h5>
+                        <span>Patient Name:</span><br>
+                        <span style="padding-left:15px;">Chris Evans</span><br>
+                        <span>Time:</span><br>
+                        <span style="padding-left:15px;">8:00 AM - 9:00 AM</span>
+                        <label for="btn">View Details<a class="btn" href="#" role="button">
+                            <img src="img/arrow-32-24.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="table-responsive">
+            <h3><strong>Today's Schedule</strong></h3>
+            <div class="list">
+                <table class="table table-hover">
+                    <thead>
+                      <!-- <tr>
+                        <th>Name</th>
+                        <th>Time</th>
+                        <th>Type</th>
+                        <th>Arrow</th>
+                      </tr> -->
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Smith Brown</td>
+                        <td>1:00 PM - 4:00 PM</td>
+                        <td>Special Consultation</td>
+                        <td><img src="img/arrow-32-24.png" alt=""></a></td>
+                      </tr>
+                      <tr>
+                        <td>David Lee</td>
+                        <td>3:00 PM - 4:00 PM</td>
+                        <td>Primary Consultation</td>
+                        <td><img src="img/arrow-32-24.png" alt=""></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("container").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("container").style.marginLeft= "0";
+      }
+      </script>
+</body>
+</html>

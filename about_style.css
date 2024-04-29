@@ -1,0 +1,314 @@
+.jumbotron {
+    padding-bottom: 5px;
+}
+.jumbotron .card-deck {
+    background-color:#BFEAF5;
+    border-radius: 10px;
+    position: relative;
+    top: -45px;
+}
+.nav-item .active  a {
+    color:#0245A3;
+    font-weight: 600;
+}
+.nav-item a:hover {
+    color:#0245A3;
+    font-weight: 600;
+}
+
+.card-deck img {
+    height: 295px;
+    width: 275px;
+    padding: 20px;
+}
+.card-deck .card {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: -35px;
+}
+.card-deck .card h2 {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.card-deck .card p {
+    width: 835px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.cards-1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -25px;
+    text-align: justify;
+}
+.cards-1 .card {
+    background-color:#BFEAF5;
+    border-radius: 10px;
+    border: none;
+    width: 560px;
+    height: 285px;
+}
+.cards-1 .card:nth-child(2) {
+    margin-left: 20px;
+}
+.cards-1 .card h4 {
+    text-align: center;
+}
+.cards-1 .card p {
+    font-size: 12.75px;
+}
+.cards-1 .card ul {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1150px;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 125px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 25px;
+    position: relative;
+    top: -25px;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+.cards-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+.cards-2 .card {
+    width: 365px;
+}
+/* .cards-2 .card:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+} */
+.cards-2 .card-body .btn, .card-query .btn {
+    position: relative;
+    float: right;
+    background-color:#91D8E4; 
+    border-color:#91D8E4; 
+    font-weight:bolder;
+    color: #024583;
+}
+.card-info, .card-query {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1150px;
+    text-align: justify;
+    padding: 25px 45px;
+    background-color: #BFEAF5;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.card-text:last-child {
+    padding-bottom: 2rem;
+}
+
+.card-query {
+    height: 465px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-query input {
+    width: 650px;
+    margin-bottom: 15px;
+}
+.card-query input:nth-child(1) {
+    margin-right: 25px;
+}
+.card-query textarea {
+    max-height: 150px;
+}
+.card-query .line-1, .card-query .line-2 {
+    display: flex;
+}
+.card-query .btn {
+    width: 350px;
+    margin: 20px;
+    position: relative;
+    right: 320px;
+}
+.card-dev-title {
+    text-align: center;
+    color: #024583;
+}
+.cards-3 {
+    padding-left: 60px;
+    display: flex;
+    margin-bottom: 35px;
+}
+.cards-3 .card {
+    width: 325px;
+    margin-right: 80px;
+    padding: 10px;
+}
+.cards-3 .card-body {
+    padding: 5px;
+}
+.cards-3 .card h6 {
+    font-size: smaller;
+    font-weight: bolder;
+}
+.cards-3 .card p {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+}
+.cards-3 .card .btn {
+    font-size: 10px;
+    border-radius: 15px;
+    float: right;
+    background-color:#91D8E4; 
+    border-color:#91D8E4; 
+    font-weight:bolder;
+    color: #024583;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; 
+    background-color:#82AAE3; 
+    color:#0245A3
+}
+
+
+.card {
+    width: 200px;
+    height: min-content;
+    transition: all .3s;
+    position: relative;
+    border-radius: .5rem 0rem 0rem 2rem;
+    box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+    background-color: #024583;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  
+  .img:hover {
+    transform: scale(1.3);
+  }
+  
+  .img-container {
+    display: grid;
+    border-radius: .5rem 2rem;
+    height: 270px;
+    overflow: hidden;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    text-align: start;
+    padding: .5rem 1em;
+    width: 90%;
+    transition: all 0.5s ease;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    backdrop-filter: blur(.1rem);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .5rem 2rem;
+  }
+  
+  .description:hover {
+    transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+    box-shadow: none;
+  }
+  
+.cards-2 .card-title {
+    color: #EAFDFC;
+  }
+
+.cards-2 .card-text{
+    color: #BFEAF5;
+}
+
+.card-deck img{
+    margin: auto;
+    display: block;
+}
